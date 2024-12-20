@@ -22,7 +22,7 @@ public class ConsultaChatGPT {
         try {
             CompletionRequest requisicao = CompletionRequest.builder()
                     .model("gpt-3.5-turbo-instruct") // Modelo mais econômico
-                    .prompt("me fale sobre o artista, se limite a 100 palavras: " + texto)
+                    .prompt("me fale sobre o artista, se limite a 50 palavras: " + texto)
                     .maxTokens(150) // Limite ajustado para evitar respostas longas
                     .temperature(0.5) // Mais consistência, menos uso de tokens
                     .build();
